@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Survey</title>
+</head>
+
+<body>
+
+    <h1>Login Form</h1>
+
+    <form action="#" method="post">
+
+        <label for="login-email">Email:</label>
+        <input
+            type="email"
+            id="login-email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <br><br>
+
+        <label for="login-password">Password:</label>
+        <input
+            type="password"
+            id="login-password"
+            name="password"
+            placeholder="Enter your password"
+            minlength="8"
+            required
+        >
+
+        <br><br>
+
+        <input
+            type="checkbox"
+            id="remember"
+            name="remember"
+        >
+
+        <label for="remember">
+            Remember Me
+        </label>
+
+        <br><br>
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+
+    <hr>
+
+
+    <h1>Customer Survey</h1>
+
+    <form action="#" method="post">
+
+        <!-- Full Name -->
+        <label for="fullname">
+            Full Name:
+        </label>
+
+        <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+            minlength="3"
+            maxlength="50"
+            required
+        >
+
+        <br><br>
+
+
+        <!-- Email -->
+        <label for="email">
+            Email:
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+        >
+
+        <br><br>
+
+
+        <!-- Phone -->
+        <label for="phone">
+            Phone:
+        </label>
+
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="01012345678"
+            pattern="01[0125][0-9]{8}"
+            title="Enter a valid Egyptian phone number"
+            required
+        >
+
+        <br><br>
+
+
+        <!-- Age -->
+        <label for="age">
+            Age:
+        </label>
+
+        <input
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="100"
+            required
+        >
+
+        <br><br>
+
+
+        <!-- Birth Date -->
+        <label for="birthdate">
+            Birth Date:
+        </label>
+
+        <input
+            type="date"
+            id="birthdate"
+            name="birthdate"
+            required
+        >
+
+        <br><br>
+
+
+        <!-- Gender -->
+        <label>
+            Gender:
+        </label>
+
+        <br>
+
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            required
+        >
+
+        <label for="male">
+            Male
+        </label>
+
+        <br>
+
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+        >
+
+        <label for="female">
+            Female
+        </label>
+
+        <br><br>
+
+
+        <!-- Country -->
+        <label for="country">
+            Country:
+        </label>
+
+        <select
+            id="country"
+            name="country"
+            required
+        >
+
+            <option value="">
+                Select your country
+            </option>
+
+            <option value="egypt">
+                Egypt
+            </option>
+
+            <option value="saudi-arabia">
+                Saudi Arabia
+            </option>
+
+            <option value="uae">
+                United Arab Emirates
+            </option>
+
+            <option value="kuwait">
+                Kuwait
+            </option>
+
+            <option value="qatar">
+                Qatar
+            </option>
+
+        </select>
+
+        <br><br>
+
+
+        <!-- Website -->
+        <label for="website">
+            Personal Website:
+        </label>
+
+        <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="https://example.com"
+        >
+
+        <br><br>
+
+
+        <!-- Satisfaction -->
+        <label for="satisfaction">
+            How satisfied are you?
+        </label>
+
+        <select
+            id="satisfaction"
+            name="satisfaction"
+            required
+        >
+
+            <option value="">
+                Select an option
+            </option>
+
+            <option value="excellent">
+                Excellent
+            </option>
+
+            <option value="very-good">
+                Very Good
+            </option>
+
+            <option value="good">
+                Good
+            </option>
+
+            <option value="poor">
+                Poor
+            </option>
+
+            <option value="very-poor">
+                Very Poor
+            </option>
+
+        </select>
+
+        <br><br>
+
+
+        <!-- Interests -->
+        <label>
+            Your Interests:
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox"
+            id="web"
+            name="interests"
+            value="web"
+        >
+
+        <label for="web">
+            Web Development
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox"
+            id="ai"
+            name="interests"
+            value="ai"
+        >
+
+        <label for="ai">
+            Artificial Intelligence
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox"
+            id="mobile"
+            name="interests"
+            value="mobile"
+        >
+
+        <label for="mobile">
+            Mobile Development
+        </label>
+
+        <br>
+
+        <input
+            type="checkbox"
+            id="cybersecurity"
+            name="interests"
+            value="cybersecurity"
+        >
+
+        <label for="cybersecurity">
+            Cybersecurity
+        </label>
+
+        <br><br>
+
+
+        <!-- Experience -->
+        <label for="experience">
+            Years of Experience:
+        </label>
+
+        <input
+            type="number"
+            id="experience"
+            name="experience"
+            min="0"
+            max="50"
+            value="0"
+        >
+
+        <br><br>
+
+
+        <!-- Feedback -->
+        <label for="feedback">
+            Additional Feedback:
+        </label>
+
+        <br>
+
+        <textarea
+            id="feedback"
+            name="feedback"
+            rows="5"
+            cols="40"
+            minlength="10"
+            maxlength="500"
+            placeholder="Write your feedback..."
+            required
+        ></textarea>
+
+        <br><br>
+
+
+        <!-- Terms -->
+        <input
+            type="checkbox"
+            id="terms"
+            name="terms"
+            required
+        >
+
+        <label for="terms">
+            I agree to the terms and conditions
+        </label>
+
+        <br><br>
+
+
+        <!-- Buttons -->
+        <button type="submit">
+            Submit Survey
+        </button>
+
+        <button type="reset">
+            Reset
+        </button>
+
+    </form>
+
+</body>
+
+</html>
