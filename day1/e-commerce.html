@@ -4,32 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechStore</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="\..\\day2\styleD2.css">
 </head>
 
 <body>
 
     <!-- Header -->
-    <div class="header">
+    <header class="header">
 
-        <div class="logo">
-            TechStore
-        </div>
-
-        <div class="nav">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Categories</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </div>
-
-        <div class="cart">
-            Cart
-        </div>
-
+    <div class="logo">
+        TechStore
     </div>
 
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div>
+        <button class="cart">
+            Cart
+        </button>
+
+        <button id="themeButton" onclick="toggleTheme()">
+            Dark Mode
+        </button>
+    </div>
+
+</header>
+
+<script>
+    function toggleTheme() {
+        document.body.classList.toggle("dark-theme");
+
+        if (document.body.classList.contains("dark-theme")) {
+            document.getElementById("themeButton").textContent = "Light Mode";
+        } else {
+            document.getElementById("themeButton").textContent = "Dark Mode";
+        }
+    }
+</script>
 
     <!-- Hero -->
     <div class="hero">
